@@ -1,10 +1,63 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand scroll" href="#intro"><%= image_tag "logo_white.png" %></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+        <li><%= link_to "Program", root_path(anchor: "features"), class: "scroll" %></li>
+        <li><%= link_to "Students", root_path(anchor: "students"), class: "scroll" %></li>
+        <li><%= link_to "Contact", root_path(anchor: "contact"), class: "scroll" %></li>                
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+    <script>
+      var a = $(".navbar").offset().top;
+
+      $(document).scroll(function(){
+          if($(this).scrollTop() > a)
+          {   
+             $('.navbar').css({"background":"rgba(181, 23, 11, 1)"});
+             $('.navbar-brand img').css({"max-height":"2rem"});
+             $('.navbar-brand img').css({"transform":"translateY(-15%)"});
+             $('.navbar-default .navbar-nav>li>a').css({"font-size":"0.7rem"});
+             $('.navbar-default .navbar-nav>li>a').css({"padding-top":"0.7rem"});
+             $('.navbar-default .navbar-nav>li>a').css({"padding-bottom":"0.3rem"});
+             $('.navbar .navbar-collapse').css({"margin-top":"0.1rem"}); 
+             $('.navbar .navbar-collapse').css({"margin-bottom":"0.1rem"}); 
+          } else {
+             $('.navbar').css({"background":"transparent"});
+             $('.navbar-brand img').css({"max-height":"3rem"});
+             $('.navbar-brand img').css({"transform":"translateY(10%)"});
+             $('.navbar-default .navbar-nav>li>a').css({"font-size":"0.9rem"});
+             $('.navbar-default .navbar-nav>li>a').css({"padding-top":"0.7rem"});
+             $('.navbar-default .navbar-nav>li>a').css({"padding-bottom":"0.7rem"});
+             $('.navbar .navbar-collapse').css({"margin-top":"1rem"}); 
+             $('.navbar .navbar-collapse').css({"margin-bottom":"1rem"}); 
+          }
+      });
+    </script>
+</nav>
 
 <body>
-<section id="intro" class="bg-blue top">
-  <div class="container innovatigo">
+<section id="intro" class="top">
+  <div class="container kostya">
     <div class="row centered">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <%= inline_svg("kostya.svg", class: "kostya-logo")%>
+        <h2>Nacho</h2>
+        <h2>Galindo</h2
       </div>
     </div>
   </div> <!-- /container -->

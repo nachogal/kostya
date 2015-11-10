@@ -3,16 +3,15 @@
    ========================================================================== */
 
 // Overall
-$primary-color: #4369a9; // blue
-$secondary-color: #4369a9; // orange
+$primary-color: #b9e5ff; // blue
 $black: #333;
 $grey: #999;
 $background-grey: #f2f2f2;
 
-body, html { height: 100%; width: 100%; font-size: 18px; }
+body, html { height: 100%; width: 100%; font-size: 1.5rem; }
 
 @media (max-width: 767px) {
-  body, html { height: 100%; width: 100%; font-size: 14px; }
+  body, html { height: 100%; width: 100%; font-size: 1.2rem; }
 }
 
 body {
@@ -20,7 +19,7 @@ body {
   letter-spacing: -0.02rem;
   line-height: 1.33;
   color: $primary-color;
-  font-family: 'Geo', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
@@ -44,88 +43,48 @@ section {
 
 .line {
   height: 1px;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   margin: 0 5rem 0 5rem;
 }
 
 // Titles and Derivatives
 h1, h2, h3, h4, h5 {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   font-weight: 200;
 }
 
 h1 {
-  font-family: 'Optima', serif;
+  font-family: 'Proxima Nova', sans-serif;
   color: white;
   font-size: 4rem;
   letter-spacing: 0.7rem;
   margin: 0.8rem 0 0.2rem 0;
-  text-transform: uppercase;
-  @media (max-width: 1199px) {
-    font-size: 3.7rem;  
-    }
-  @media (max-width: 991px) {
-    text-align: center;  
-    }  
-}
-
-.team {
-  font-family: 'Geo', sans-serif;
-  font-size: 5.5rem;
-  font-weight: 100;
-  text-transform: none;
-  @media (max-width: 1199px) {
-    font-size: 5rem;  
-    }
-  @media (max-width: 991px) {
-    text-align: center;  
-    }    
+  text-transform: uppercase; 
 }
 
 h2 {
-  font-weight: 100;
-  color: #333;
-  font-size: 2.3rem;
-  margin: 0 0 1.3rem 0;
-  text-transform: none; 
-  letter-spacing: -0.05rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 0.9rem;
+  margin: 0 0 0 0;
+  text-transform: uppercase; 
+  letter-spacing: 0.7rem;
   text-align: center;
   display: block;
-  padding-bottom: 15px;
-}
-
-.grow {
-  font-weight: 800;
-  text-align: center;
-  font-size: 3.5rem;
-  color: #333;
-  letter-spacing: -0.1rem;
-  text-transform: none; 
-  margin-bottom: 1.5rem;
+  padding-bottom: 0.6rem;
 }
 
 h3 {
   font-weight: 800;
-  color: $secondary-color;
+  color: white;
   font-size: 1rem;
   margin: 1rem 0 0.2rem 0;
   text-align: center;
   letter-spacing: 0.05rem;
 }
 
-.ufm {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: 0.2rem 0 0.2rem 0;
-  text-align: left;
-  letter-spacing: 0.5rem;
-    @media (max-width: 1199px) {
-    }
-    @media (max-width: 991px) {
-    text-align: center;  
-    }  
-}
 
 h4 {
   color: white;
@@ -137,7 +96,7 @@ h4 {
 }
 
 h5 {
-  color: $secondary-color;
+  color: white;
   text-transform: none;
   font-size: 1.2rem;
   font-weight: 800;
@@ -149,7 +108,7 @@ h5 {
 
 // Paragraph & Typographic
 p {
-  font-family: 'Geo', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 100;
   font-size: 1.1rem;
   color: black;
@@ -267,6 +226,6 @@ hr {
 
 .kostya-logo {
   width: 30%;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   fill: white;
 }

@@ -1,15 +1,14 @@
-$primary-color: #4369a9; // blue
-$secondary-color: #e41220; // orange
+$primary-color: #b9e5ff; // blue
 $black: #333;
 $grey: #999;
-$background-grey: #eef2f3;
+$background-grey: #f2f2f2;
 
 .bg-grey {
   background-color: $background-grey;
 }
 
 body {
-  height: 400rem;
+  height: 350rem;
   background: linear-gradient(179deg, #fcf9f4, #e7e3da, #d8d1be, #cfc19c);
   background-size: 800% 800%;
 
@@ -40,7 +39,27 @@ body {
   } 
 } 
 
-.innovatigo {
+#intro {
+  background-image: url(peeling-1.jpg);
+}
+
+.top {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 29rem;
+  background-size: 100% 100%;
+/*  animation: peeling 10s ease infinite;
+
+  @keyframes peeling {
+    0%{transform: translate3d(0rem, 0rem, 0rem);}
+    50%{transform: translate3d(1rem, 0rem, 0rem);}
+    100%{transform: translate3d(0rem, 0rem, 0rem);}
+  } */
+}
+
+.kostya {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -57,42 +76,6 @@ body {
 .logo {
   max-width: 6rem;
   margin-top: 1.5rem;
-}
-
-.top {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 40rem;
-  background: linear-gradient(179deg, #fcf9f4, #e7e3da, #d8d1be, #cfc19c);
-  background-size: 800% 800%;
-
-  -webkit-animation: AnimationName 8s ease infinite;
-  -moz-animation: AnimationName 8s ease infinite;
-  -o-animation: AnimationName 8s ease infinite;
-  animation: AnimationName 8s ease infinite;
-
-  @-webkit-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
-  @-moz-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
-  @-o-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  }
-  @keyframes AnimationName { 
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-  } 
 }  
 
 .diferencias { 
