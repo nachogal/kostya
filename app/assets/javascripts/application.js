@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-/*smoothscroll*/
+// smoothscroll
 jQuery(document).ready(function(e) {
   e(".scroll").click(function(t) {
     t.preventDefault();
@@ -24,7 +24,6 @@ jQuery(document).ready(function(e) {
     }, 1e3)
   })
 });
-
 
 // magnificPopup for Mentors section
 jQuery(function($) {

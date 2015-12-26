@@ -2,8 +2,8 @@
    Custom styles
    ========================================================================== */
 
-// Overall
-$primary-color: #b9e5ff; // blue
+/* Overall */
+$primary-color: #fff; // white
 $black: #333;
 $grey: #999;
 $background-grey: #f2f2f2;
@@ -15,7 +15,6 @@ body, html { height: 100%; width: 100%; font-size: 1.5rem; }
 }
 
 body {
-  background-color: #fff;
   letter-spacing: -0.02rem;
   line-height: 1.33;
   color: $primary-color;
@@ -24,9 +23,13 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-// Spacing
+/* Spacing */
 section {
-  padding: 4rem 0;
+  padding: 2rem 0;
+}
+
+.container-fluid {
+  padding: 0rem;
 }
 
 .centered {
@@ -47,20 +50,38 @@ section {
   margin: 0 5rem 0 5rem;
 }
 
-// Titles and Derivatives
+#arriba, #abajo, #izquierda, #derecha {
+  background-color: white;
+  position: fixed;
+  }
+  #izquierda, #derecha {
+    top: 0; bottom: 0;
+    width: 0.5rem;
+    }
+    #izquierda { left: 0; }
+    #derecha { right: 0; }
+    
+  #arriba, #abajo {
+    left: 0; right: 0;
+    height: 0.5rem;
+    }
+    #arriba { top: 0; }
+    #abajo { bottom: 0; }
+
+/* Titles and Derivatives */
 h1, h2, h3, h4, h5 {
   font-family: 'Helvetica Neue', sans-serif;
-  text-transform: uppercase;
   font-weight: 200;
 }
 
 h1 {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   color: white;
-  font-size: 4rem;
-  letter-spacing: 0.7rem;
-  margin: 0.8rem 0 0.2rem 0;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
   text-transform: uppercase; 
+  margin-top: 11rem;
 }
 
 h2 {
@@ -68,21 +89,20 @@ h2 {
   font-weight: 200;
   color: white;
   font-size: 0.9rem;
-  margin: 0 0 0 0;
+  margin: 0 0 1.5rem 0;
   text-transform: uppercase; 
-  letter-spacing: 0.7rem;
   text-align: center;
-  display: block;
-  padding-bottom: 0.6rem;
+  letter-spacing: 0.6rem;
 }
 
 h3 {
   font-weight: 800;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 1rem 0 0.2rem 0;
   text-align: center;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0rem;
+  text-shadow: 2px 2px 8px #999;
 }
 
 
@@ -106,7 +126,7 @@ h5 {
 }
 
 
-// Paragraph & Typographic
+/* Paragraph & Typographic */
 p {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 100;
@@ -133,7 +153,7 @@ p {
   margin: 0.3rem 0 0.3rem 0;
 }
 
-// Links
+/* Links */
 a {
   font-size: 1.25rem;
   color: $black;
@@ -222,10 +242,116 @@ hr {
   opacity: 0.7;
 }
 
-// SVG
+/* Images */
+#intro {
+  background-image:url(/assets/atardecer.png);
+}
+
+.kostya {
+  background-image:url(/assets/estrellas.png);
+}
+
+.luna {
+  margin-top: 10rem;
+  float: right;
+  @media (min-width: 750px) {
+    height: 9rem;
+    width: auto;
+    margin-right: 1.5rem;
+  }
+  @media (max-width: 750px) {
+    margin-top: 15rem;
+    height: 9rem;
+    width: auto;
+  }
+}
+
+.cometa {
+margin-top: 14rem;
+  @media (min-width: 750px) {
+    height: 4rem;
+    width: auto;
+    margin-left: 1rem;
+  }
+  @media (max-width: 750px) {
+    margin-top: 16rem;
+    height: 3rem;
+    width: auto;
+  }
+}
+
+.sol {
+  background-image:url(/assets/sol.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin: 7rem 0 5rem 0;
+  @media (max-width: 750px) {
+    background-size: 25% auto;
+  }
+}
+
+.nube {
+  padding: 0rem;
+}
+
+/* SVG 
 
 .kostya-logo {
   width: 30%;
   padding-bottom: 1rem;
   fill: white;
 }
+
+SS Parallax 
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+.hsContainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+}
+
+.hsContent {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  padding: 0 8%;
+  text-align: center
+}
+
+.bcg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500%;
+  width: 100%;
+} */
+

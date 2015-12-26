@@ -1,67 +1,114 @@
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand scroll" href="#intro"><%= image_tag "logo_white.png" %></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-        <li><%= link_to "Program", root_path(anchor: "features"), class: "scroll" %></li>
-        <li><%= link_to "Students", root_path(anchor: "students"), class: "scroll" %></li>
-        <li><%= link_to "Contact", root_path(anchor: "contact"), class: "scroll" %></li>                
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-    <script>
-      var a = $(".navbar").offset().top;
-
-      $(document).scroll(function(){
-          if($(this).scrollTop() > a)
-          {   
-             $('.navbar').css({"background":"rgba(181, 23, 11, 1)"});
-             $('.navbar-brand img').css({"max-height":"2rem"});
-             $('.navbar-brand img').css({"transform":"translateY(-15%)"});
-             $('.navbar-default .navbar-nav>li>a').css({"font-size":"0.7rem"});
-             $('.navbar-default .navbar-nav>li>a').css({"padding-top":"0.7rem"});
-             $('.navbar-default .navbar-nav>li>a').css({"padding-bottom":"0.3rem"});
-             $('.navbar .navbar-collapse').css({"margin-top":"0.1rem"}); 
-             $('.navbar .navbar-collapse').css({"margin-bottom":"0.1rem"}); 
-          } else {
-             $('.navbar').css({"background":"transparent"});
-             $('.navbar-brand img').css({"max-height":"3rem"});
-             $('.navbar-brand img').css({"transform":"translateY(10%)"});
-             $('.navbar-default .navbar-nav>li>a').css({"font-size":"0.9rem"});
-             $('.navbar-default .navbar-nav>li>a').css({"padding-top":"0.7rem"});
-             $('.navbar-default .navbar-nav>li>a').css({"padding-bottom":"0.7rem"});
-             $('.navbar .navbar-collapse').css({"margin-top":"1rem"}); 
-             $('.navbar .navbar-collapse').css({"margin-bottom":"1rem"}); 
-          }
-      });
-    </script>
-</nav>
-
 <body>
-<section id="intro" class="top">
-  <div class="container kostya">
+
+<!-- Intentos de Parallax
+<div class="parallax">
+  <div class="parallax__layer parallax__layer--back">
+  </div>
+  <div class="parallax__layer parallax__layer--base">
+    <h1>Kostya</h1>
+  </div>
+</div>
+
+<section id="intro" class="homeSlide">
+  <div class="bcg container"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#intro">
+
+      <div class="hsContainer">
+          <div class="hsContent"
+              data-center="opacity: 1"
+              data-106-top="opacity: 0"
+              data-anchor-target="#intro h1">
+              <h1>Kostya</h1>
+          </div>
+      </div>
+  </div>
+</section>-->
+
+<section id="intro">
+  <div class="container-fluid">
+    <div class="row kostya centered">
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <%= image_tag "luna.png", class: "img-responsive luna"%>
+      </div> 
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <h1>Kostya</h1>
+      </div> 
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <%= image_tag "cometa.png", class: "img-responsive cometa"%>
+      </div>  
+    </div> <!-- /row -->
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h2>Parsi Fal</h2>
+        <h2>Alpar Sif</h2>
+        <h2>Arsif Alp</h2>
+        <h2><strong>FAL PARSI</strong></h2>
+      </div>
+    </div> <!-- /row -->
+  </div> <!-- /container -->   
+
+  <div class="container-fluid">
+    <div class="row sol centered">
+      <div class="col-md-12 col-sm-12 col-xs-12 nube">
+        <%= image_tag "nubes1.png", class: "img-responsive centered"%>
+      </div>
+    </div> <!-- /row -->  
+    <div class="row nubes centered">  
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <h3>Victoria</h3>
+      </div> 
+      <div class="col-md-pull-5 col-sm-6 col-xs-6">
+        <%= image_tag "nubes2.png", class: "img-responsive nubes2"%>
+      </div>  
+    </div> <!-- /row --> 
+  </div> <!-- /container -->
+</section> <!-- /intro -->
+
+<section id="emisario">
+  <div class="container">
     <div class="row centered">
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <%= inline_svg("kostya.svg", class: "kostya-logo")%>
-        <h2>Nacho</h2>
-        <h2>Galindo</h2
+        <h3>Emisario</h3>
       </div>
     </div>
   </div> <!-- /container -->
-</section> <!-- /intro -->
+</section> <!-- /emisario -->
+
+<section id="letanias">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h3>Letanías</h3>
+      </div>
+    </div>
+  </div> <!-- /container -->
+</section> <!-- /letanias -->
+
+<section id="granadino">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h3>Granadino</h3>
+      </div>
+    </div>
+  </div> <!-- /container -->
+</section> <!-- /granadino -->
+
+<section id="poemaazul">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h2>Azul Poema</h2>
+        <h2>Poazu Emal</h2>
+        <h2>Ulpo Emazu</h2>
+        <h2 class="bold">Poema Azul</h2>
+      </div>
+    </div>
+  </div> <!-- /container -->
+</section> <!-- /poemaazul -->
 
 <section id="what">
   <div class="container centered">
@@ -294,6 +341,17 @@
     </div>  
   </div> <!-- /container -->
 </section>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/skrollr.js"></script>
+<script src="js/_main.js"></script>-->
+
+<div id="izquierda"></div>
+<div id="derecha"></div>
+<div id="arriba"></div>
+<div id="abajo"></div>
+
 </body>
 
 <footer>
