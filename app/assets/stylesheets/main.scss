@@ -46,8 +46,9 @@ section {
 
 .line {
   height: 1px;
+  width: 8rem;
+  margin: auto;
   background-color: $primary-color;
-  margin: 0 5rem 0 5rem;
 }
 
 #arriba, #abajo, #izquierda, #derecha {
@@ -72,7 +73,7 @@ section {
     #abajo { bottom: 0; }  
 
 /* Titles and Derivatives */
-h1, h3, h4, h5 {
+h1, h3, h5 {
   font-family: 'Raleway', 'Helvetica Neue', sans-serif;
   font-weight: 200;
 }
@@ -108,14 +109,14 @@ h3 {
   text-shadow: 2px 2px 8px #333;
 }
 
-
 h4 {
+  font-weight: 200;
   color: white;
-  font-size: 1.25rem;
-  font-weight: 100;
-  letter-spacing: 0.1rem;
-  margin: 0 0 3rem 0;
-  line-height: 2rem;
+  font-size: 1rem;
+  margin: 0 0 0.3rem 0;
+  text-transform: uppercase; 
+  text-align: center;
+  letter-spacing: 0rem;
 }
 
 h5 {
