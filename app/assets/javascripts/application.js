@@ -12,10 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.magnific-popup
 //= require turbolinks
 //= require_tree .
-
-//= require magnific-popup
 
 // smoothscroll
 jQuery(document).ready(function(e) {
