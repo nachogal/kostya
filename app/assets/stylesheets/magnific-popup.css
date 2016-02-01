@@ -1,13 +1,12 @@
 /* Styles for dialog window */
 .small-dialog {
-  background: white;
-  padding: 20px 30px;
+  background: none;
+  padding: 0.5rem 0.5rem;
   text-align: left;
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 40rem;
+  margin: 0rem auto;
   position: relative;
 }
-
 
 /**
  * Fade-zoom animation for first dialog

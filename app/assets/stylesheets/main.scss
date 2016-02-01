@@ -18,7 +18,7 @@ body {
   letter-spacing: -0.02rem;
   line-height: 1.33;
   color: $primary-color;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
@@ -69,16 +69,16 @@ section {
     }
 
     #arriba { top: 0; }
-    #abajo { bottom: 0; }
+    #abajo { bottom: 0; }  
 
 /* Titles and Derivatives */
-h1, h2, h3, h4, h5 {
-  font-family: 'Helvetica Neue', sans-serif;
+h1, h3, h4, h5 {
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
   font-weight: 200;
 }
 
 h1 {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Raleway", 'Helvetica Neue', sans-serif;
   color: white;
   font-weight: bold;
   font-size: 3rem;
@@ -88,10 +88,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 200;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0 0 1.5rem 0;
   text-transform: uppercase; 
   text-align: center;
@@ -99,13 +98,14 @@ h2 {
 }
 
 h3 {
+  font-family: "Raleway", 'Helvetica Neue', sans-serif;
   font-weight: 800;
   color: white;
   font-size: 1.5rem;
-  margin: 1rem 0 0.2rem 0;
-  text-align: center;
+  margin: 1rem 0 1rem 0rem;
+  text-align: left;
   letter-spacing: 0rem;
-  text-shadow: 2px 2px 8px #999;
+  text-shadow: 2px 2px 8px #333;
 }
 
 
@@ -131,36 +131,47 @@ h5 {
 
 /* Paragraph & Typographic */
 p {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: 100;
-  font-size: 1.1rem;
-  color: black;
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: white;
+  line-height: 1.1rem;
+  letter-spacing: 0.01rem;
   margin: 0 0 2rem 0;
 }
 
-.programa {
-  font-size: 1.2rem;
-}
-
-.rol {
-  font-weight: 100;
-  font-size: 1.1rem;
-  color: black;
-  text-align: center;
-  margin: 0.3rem 0 1.5rem 0;
-  letter-spacing: 0rem;
-}
-
-.inciso {
-  text-align: left;
-  margin: 0.3rem 0 0.3rem 0;
+pre {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: white;
+  line-height: 1.1rem;
+  letter-spacing: 0.01rem;
+  display: block;
+  padding: 0;
+  margin: 0;
+  word-break: break-all;
+  word-wrap: normal;
+  background-color: transparent;
+  border: none;
+  border-radius: none;
 }
 
 /* Links */
 a {
-  font-size: 1.25rem;
-  color: $black;
-  word-wrap: break-word;
+  font-family: "Raleway", 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 1.7rem;
+  margin: 1rem 0 0.2rem 0;
+  text-align: center;
+  letter-spacing: 0rem;
+  text-shadow: 2px 2px 8px #3a3a3a;
+    &:hover {
+      color: white;
+    }
+    &:focus {
+      color: white;
+    }
 }
 
 a.white {
@@ -173,7 +184,7 @@ a.white {
 
 a:hover, a:focus {
   outline: 0;
-  opacity: 0.8;
+  opacity: 1;
   text-decoration: none;
 }
 
@@ -196,41 +207,6 @@ hr {
 
 .row {
   margin: 0px;
-}
-
-.teammate {
-  margin-top: 1rem;
-  height: 8rem;
-  width: auto; 
-  border-radius: 150px;
-  border: 2px solid transparent; 
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s; 
-}
-
-.teammate:hover { 
-  /* border: 2px solid $primary-color; */
-  opacity: 0.8; 
-} 
-
-.cualidad {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  height: 3rem;
-  width: auto; 
-} 
-
-.tigo {
-  height: 10rem;
-  width: auto;
-  float: right;
-    @media (max-width: 1199px) {
-    float: none;
-    margin-right: auto;
-    margin-left: auto
-  }
 }
 
 .overlay {
@@ -277,20 +253,6 @@ margin-top: 14rem;
     height: 3rem;
     width: auto;
   }
-}
-
-.sol {
-  background-image:url(/assets/sol.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  margin: 7rem 0 5rem 0;
-  @media (max-width: 750px) {
-    background-size: 25% auto;
-  }
-}
-
-.nube {
-  padding: 0rem;
 }
 
 /* SVG 
