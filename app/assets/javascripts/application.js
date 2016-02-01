@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
+//= require magnific-popup
+
 // smoothscroll
 jQuery(document).ready(function(e) {
   e(".scroll").click(function(t) {
