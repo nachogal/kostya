@@ -25,7 +25,7 @@ body {
 
 /* Spacing */
 section {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .container-fluid {
@@ -46,7 +46,7 @@ section {
 
 .line {
   height: 1px;
-  width: 8rem;
+  width: 7rem;
   margin: auto;
   background-color: $primary-color;
 }
@@ -58,7 +58,7 @@ section {
 
   #izquierda, #derecha {
     top: 0; bottom: 0;
-    width: 0.5rem;
+    width: 0.7rem;
     }
 
     #izquierda { left: 0; }
@@ -66,7 +66,7 @@ section {
     
   #arriba, #abajo {
     left: 0; right: 0;
-    height: 0.5rem;
+    height: 0.7rem;
     }
 
     #arriba { top: 0; }
@@ -112,7 +112,7 @@ h3 {
 h4 {
   font-weight: 200;
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 0 0 0.3rem 0;
   text-transform: uppercase; 
   text-align: center;
@@ -143,9 +143,9 @@ p {
 pre {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   color: white;
-  line-height: 1.1rem;
+  line-height: 1.05rem;
   letter-spacing: 0.01rem;
   display: block;
   padding: 0;
@@ -259,7 +259,7 @@ margin-top: 14rem;
 /* SVG 
 
 .kostya-logo {
-  width: 30%;
+  width: 50%;
   padding-bottom: 1rem;
   fill: white;
 }
