@@ -8,6 +8,31 @@
   <link rel="stylesheet" href="animate.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link type="text/css" href="/stylesheets/pink.flag/jplayer.blue.monday.scss" rel="stylesheet" />
+  <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.jplayer.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#jquery_jplayer_1").jPlayer({
+      ready: function () {
+        $(this).jPlayer("setMedia", {
+          title: "Bubble",
+          m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+          oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+        });
+      },
+      cssSelectorAncestor: "#jp_container_1",
+      swfPath: "/js",
+      supplied: "m4a, oga",
+      useStateClassSkin: true,
+      autoBlur: false,
+      smoothPlayBar: true,
+      keyEnabled: true,
+      remainingDuration: true,
+      toggleDuration: true
+    });
+  });
+</script>
 </head>
 <body>
 <% if notice %>
